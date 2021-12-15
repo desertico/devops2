@@ -5,7 +5,7 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.7
-  working_directory: ~/devops      
+  working_directory: ~/devops2    
 # 
   steps:
 
