@@ -18,9 +18,9 @@ jobs:
     - run:
         name: run tests  
         command:
-                - venv/bin/activate
-                flake8 --exclude=env* --statitics
-                pytest --jumixml-test-results/junit.xml
+               . venv/bin/activate
+               flake8 --exclude=env* --statitics
+               pytest --jumixml-test-results/junit.xml
     - store_test_results:
         path: test-results
     - store_artifacts:
