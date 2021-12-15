@@ -15,17 +15,17 @@ jobs:
 
         name: install dependencies
         command: |
-          python3 -m venv venv
-          - venv/bin/activate
-          pip install -r requirements.txt
+        python3 -m venv venv
+        - venv/bin/activate
+        pip install -r requirements.txt
           
     - run:
 
         name: run tests  
         command: |
-         . venv/bin/activate
-         flake8 --exclude=env* --statitics
-         pytest --jumixml-test-results/junit.xml
+        . venv/bin/activate
+        flake8 --exclude=env* --statitics
+        pytest --jumixml-test-results/junit.xml
     - store_test_results:
         path: test-results
 
