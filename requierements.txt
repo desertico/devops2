@@ -1,4 +1,6 @@
 flake8
+pytest
+pytest-cov
 argon2-cffi==21.1.0
 attrs==19.3.0
 Automat==0.8.0
